@@ -36,11 +36,11 @@ public class MyLinkedList {
         if (index < 0) index = 0;
         for(int i=0;i<index+1;i++)
         {
-            if (index-1==i)
+            if (index==i)
             {
                 ListNode newNode=new ListNode(val);
 
-                newNode.next=head.next.next;
+                newNode.next=head.next;
                 head.next=newNode;
                 size++;
                 break;
